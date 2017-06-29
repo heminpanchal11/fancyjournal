@@ -13,6 +13,6 @@ public class JournalXController {
 	public String sayHello(ModelMap model)
 	{
 		model.addAttribute("greet", "JournalX is up and running");
-		return "index";
+		return "home";
 	}
 }
