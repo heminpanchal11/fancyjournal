@@ -10,17 +10,16 @@ import org.springframework.web.servlet.view.JstlView;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages="com.company.journalx")
+@ComponentScan(basePackages = "com.company.journalx")
 public class JournalXConfiguration {
 
 	@Bean
-	public ViewResolver viewResolver()
-	{
+	public ViewResolver viewResolver() {
 		InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
 		viewResolver.setViewClass(JstlView.class);
 		viewResolver.setPrefix("/WEB-XML/views");
 		viewResolver.setSuffix(".jsp");
-		
+
 		return viewResolver;
 	}
 }

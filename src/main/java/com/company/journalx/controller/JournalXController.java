@@ -9,9 +9,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping("/")
 public class JournalXController {
 
-	@RequestMapping(method=RequestMethod.GET)
-	public String sayHello(ModelMap model)
-	{
+	@RequestMapping(method = RequestMethod.GET)
+	public String sayHello(ModelMap model) {
 		model.addAttribute("greet", "JournalX is up and running");
 		return "index";
 	}

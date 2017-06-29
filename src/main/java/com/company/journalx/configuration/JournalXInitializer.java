@@ -2,12 +2,12 @@ package com.company.journalx.configuration;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-public class JournalXInitializer extends AbstractAnnotationConfigDispatcherServletInitializer{
+public class JournalXInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
 		// TODO Auto-generated method stub
-		return new Class[] {JournalXConfiguration.class};
+		return new Class[] { JournalXConfiguration.class };
 	}
 
 	@Override
@@ -19,7 +19,7 @@ public class JournalXInitializer extends AbstractAnnotationConfigDispatcherServl
 	@Override
 	protected String[] getServletMappings() {
 		// TODO Auto-generated method stub
-		return new String[] {"/"};
+		return new String[] { "/" };
 	}
 
 }
